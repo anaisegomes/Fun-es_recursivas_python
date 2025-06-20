@@ -1,0 +1,2 @@
+def ocorrencias(lista, x):
+    return lista.count(x)
