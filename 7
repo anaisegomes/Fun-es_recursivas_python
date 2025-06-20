@@ -1,0 +1,16 @@
+def divisores(n, d):
+    if d == 1:
+        return [1]
+    else:
+        divs = divisores(n-1, d-1)
+        if n%d == 0:
+         divs.append(d)
+        return divs
+
+
+def divisores(n):
+    return divisores_rec(n,n)
+
+num = int(input())
+divisores = divisores(num)
+print('o Número {:d} possui {:d} Divisores'.format(num, len(divisores)))
