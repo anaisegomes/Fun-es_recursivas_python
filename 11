@@ -1,0 +1,12 @@
+def primos(lista):
+    if len(lista) == 0:
+        return []
+    
+    primeiro_numero = lista[0]
+    
+    resto_da_lista = lista[1:]
+  
+    if primo(primeiro_numero):
+        return [primeiro_numero] + primos(resto_da_lista)
+    else:
+        return primos(resto_da_lista)  
