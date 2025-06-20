@@ -1,0 +1,2 @@
+def conta_divisores(n):
+    return 0 if n == 0 else len(list(filter(lambda d: n % d == 0, range(1, n+1))))
